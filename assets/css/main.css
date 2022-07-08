@@ -1,0 +1,75 @@
+/* Set up box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom properties will go here */
+:root {
+    --sidebar-button-background-color: #1992D4;
+    --sidebar-button--text-color: #FFFFFF;
+    --main-area-bg-color: #E2E8F0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-parent {
+    min-height: 100vh;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: minmax(250px, 13%) auto;
+    grid-template-rows: minmax(200px, 0.75fr) 3fr;
+    grid-template-areas: 
+    "side head"
+    "side main";
+}
+
+.header {
+    grid-area: head;
+    background-color: var(--sidebar-button--text-color);
+}
+
+.main-content {
+    grid-area: main;
+    background-color: var(--main-area-bg-color);
+}
+
+.sidebar {
+    grid-area: side;
+    background-color: var(--sidebar-button-background-color);
+
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: minmax(150px, 0.2fr) repeat(auto-fill, minmax(50px, 0.2fr));
+    align-items: center;
+}
+
+.sidebar > .icon:nth-child(1) {
+    width: 75%;
+}
+
+.sidebar > .icon {
+    width: 30%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+} 
+
+.title {
+    color: var(--sidebar-button--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.title.dashboard {
+    cursor: auto;
+}
