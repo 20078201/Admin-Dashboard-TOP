@@ -61,6 +61,7 @@ img {
     height: auto;
     align-self: center;
     justify-self: center;
+    filter: brightness(0) invert(1);
 } 
 
 .title {
