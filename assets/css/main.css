@@ -52,7 +52,7 @@ img {
     align-items: center;
 }
 
-.sidebar > .icon:nth-child(1) {
+.sidebar > .icon:first-child {
     width: 75%;
 }
 
