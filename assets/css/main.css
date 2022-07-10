@@ -10,10 +10,15 @@
     --sidebar-button-background-color: #1992D4;
     --sidebar-button--text-color: #FFFFFF;
     --main-area-bg-color: #E2E8F0;
+    --font-size: 1.5rem;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 600;
 }
 
 img {
@@ -26,21 +31,126 @@ img {
     background-color: aquamarine;
     display: grid;
     grid-template-columns: minmax(250px, 0.13fr) 1fr;
-    grid-template-rows: minmax(170px, 0.25fr) minmax(950px, 1fr);
+    grid-template-rows: minmax(120px, 0.25fr) minmax(950px, 1fr);
     grid-template-areas: 
-    "side head"
+    "side header"
     "side main";
-}
-
-.header {
-    grid-area: head;
-    background-color: var(--sidebar-button--text-color);
 }
 
 .main-content {
     grid-area: main;
     background-color: var(--main-area-bg-color);
 }
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--sidebar-button--text-color);
+}
+
+.search-area {
+    grid-row-end: 2;
+}
+
+.user-area {
+    grid-row-end: -1;
+}
+
+.header > .search-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: var(--font-size);
+}
+
+.search-wrapper .search-bar {
+    width: 70%;
+    height: 3vh;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--main-area-bg-color);
+    border: none;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    flex: 4;
+}
+
+.search-wrapper > input {
+    margin-left: 30px;
+}
+
+.user-wrapper {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: start;
+}
+
+.user-wrapper > * {
+    margin: 0 20px;
+}
+
+div.user-area {
+    display: flex;
+    padding: 10px;
+    font-size: var(--font-size);
+}
+
+div.user-area > * {
+    flex: 1;
+}
+
+div.user-area .user-wrapper-medium {
+    display: flex;
+    align-items: center;
+}
+
+div.user-area .user-wrapper-medium > div:first-child {
+    margin-left: 60px;
+}
+
+div.user-area .user-wrapper-medium > div:nth-child(2) {
+    margin-left: 15px;
+}
+div.user-area .user-wrapper-medium .user-detail > * {
+    margin: 30px 0;
+}
+
+.user-area div.buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.user-area div.buttons > * {
+    margin: 0 25px;
+}
+
+.btn-style {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: var(--font-size);
+    font-weight: 600;
+    color: var(--sidebar-button--text-color);
+    background-color: var(--sidebar-button-background-color);
+    border: none;
+}
+
+.btn-style:hover {
+    background-color: darkblue;
+}
+
+.btn-style:active {
+    background: gray;
+}
+
 
 .sidebar {
     grid-area: side;
@@ -66,7 +176,7 @@ img {
 
 .title {
     color: var(--sidebar-button--text-color);
-    font-size: 1.5rem;
+    font-size: var(--font-size);
     font-weight: 600;
     cursor: pointer;
 }
@@ -88,4 +198,18 @@ img {
 .icon.privacy,
 .title.privacy {
     grid-row-end: -12;
+}
+
+.profile-pic {
+    aspect-ratio: 1/1;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-pic-medium {
+    aspect-ratio: 1/1;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
 }
