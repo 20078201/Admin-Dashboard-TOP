@@ -31,7 +31,7 @@ img {
     background-color: aquamarine;
     display: grid;
     grid-template-columns: minmax(250px, 0.13fr) 1fr;
-    grid-template-rows: minmax(250px, 0.15fr) minmax(950px, 1fr);
+    grid-template-rows: minmax(250px, 0.1fr) minmax(950px, 1fr);
     grid-template-areas: 
     "side header"
     "side main";
@@ -308,17 +308,17 @@ h1.title:hover {
 
 .icon.setting,
 .title.setting {
-    grid-row-end: -14;
+    grid-row-end: -15;
 }
 
 .icon.support,
 .title.support {
-    grid-row-end: -13;
+    grid-row-end: -14;
 }
 
 .icon.privacy,
 .title.privacy {
-    grid-row-end: -12;
+    grid-row-end: -13;
 }
 
 .profile-pic {
