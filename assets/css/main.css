@@ -297,6 +297,10 @@ h1.title {
     cursor: pointer;
 }
 
+h1.title:hover {
+    text-decoration: underline yellow;
+}
+
 .title.dashboard {
     cursor: auto;
 }
