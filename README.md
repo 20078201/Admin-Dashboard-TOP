@@ -11,4 +11,7 @@ This project is about creating a admin dashboard using HTML and CSS. This projec
 - https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
 - https://www.youtube.com/watch?v=HYji_V2aYa0
 - [google](https://fonts.google.com/icons)
-- 
+- https://www.pngitem.com/middle/TbhTmoo_profile-pic-by-jar06-sans-face-pixel-art/
+- https://www.artstation.com/artwork/gmxXx
+- https://ych.commishes.com/auction/show/K248/pixel-art-profile-pic/
+- https://medium.com/the-link-art-blocks/meet-the-curation-board-heeeeeeeeeee-d322aa59fdc8
