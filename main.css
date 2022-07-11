@@ -31,7 +31,7 @@ img {
     background-color: aquamarine;
     display: grid;
     grid-template-columns: minmax(250px, 0.13fr) 1fr;
-    grid-template-rows: minmax(120px, 0.25fr) minmax(950px, 1fr);
+    grid-template-rows: minmax(250px, 0.15fr) minmax(950px, 1fr);
     grid-template-areas: 
     "side header"
     "side main";
@@ -58,7 +58,7 @@ img {
     grid-row-end: 3;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
     grid-template-rows: 1.7% repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
     overflow:auto;
@@ -100,7 +100,7 @@ img {
 
 .card {
     height: 200px;
-    width: 420px;
+    width: clamp(50%, 380px, 100%);
     padding: 10px;
     border-radius: 10px;
     background-color: var(--sidebar-button--text-color);
